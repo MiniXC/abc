@@ -4,3 +4,4 @@ streamlit-quill==0.0.3
 html2image==2.0.1
 pillow==9.3.0
 pymongo==4.3.3
+chromedriver-py==108.0.5359.22

@@ -8,8 +8,9 @@ from time import sleep
 import pymongo
 import io
 from pathlib import Path
+from chromedriver_py import binary_path
 
-hti = Html2Image(output_path='screenshots')
+hti = Html2Image(output_path='screenshots', browser_executable=binary_path)
 pli = Poooli()
 
 st.header("ABC (Advanced Babbi Interface)")
