@@ -1,16 +1,16 @@
 import streamlit as st
 from streamlit_quill import st_quill
-from html2image import Html2Image
 from poooli import Poooli
 from PIL import Image
 import numpy as np
 from time import sleep
 import pymongo
 import io
+import os
 from pathlib import Path
-from chromedriver_py import binary_path
+from html2image import Html2Image
 
-hti = Html2Image(output_path='screenshots', browser_executable=binary_path)
+hti = Html2Image(output_path='screenshots', browser="chrome")
 pli = Poooli()
 
 st.header("ABC (Advanced Babbi Interface)")
