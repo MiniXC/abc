@@ -7,6 +7,7 @@ import numpy as np
 from time import sleep
 import pymongo
 import io
+from pathlib import Path
 
 hti = Html2Image(output_path='screenshots')
 pli = Poooli()
@@ -68,6 +69,7 @@ if show_html:
     st.write(content)
 
 if content != "<p><br></p>" and content != "":
+    Path("screenshots").mkdir(parents=True, exist_ok=True)
     with st.spinner("Processing Image..."):
         hti.screenshot(
             html_str=content, 
