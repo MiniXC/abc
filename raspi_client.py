@@ -22,5 +22,6 @@ while True:
     message = messages.find_one({"printed": False, "for": name})
     if message is not None:
         print("Printing message...")
+        messages.update_one({ "_id": message["_id"]}, {"$set": {"printed": True}})
         pli.send_image_bytes(message["image"])
     time.sleep(1)
