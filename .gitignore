@@ -1,0 +1,7 @@
+.venv
+.pdm.toml
+*.lock
+dist
+build
+.streamlit
+.env
