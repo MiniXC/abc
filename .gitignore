@@ -5,3 +5,5 @@ dist
 build
 .streamlit
 .env
+.python-version
+screenshots
